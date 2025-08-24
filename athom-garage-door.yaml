@@ -71,9 +71,6 @@ web_server:
 network:
   enable_ipv6: ${ipv6_enable}
 
-bluetooth_proxy:
-  active: true
-
 wifi:
   ap: {}
   fast_connect: "${wifi_fast_connect}"
@@ -85,6 +82,15 @@ improv_serial:
 
 esp32_improv:
   authorizer: none
+
+esp32_ble_tracker:
+  scan_parameters:
+    interval: 320ms
+    window: 320ms
+    active: true
+
+bluetooth_proxy:
+  active: true
 
 dashboard_import:
   package_import_url: github://athom-tech/esp32-configs/athom-garage-door.yaml
