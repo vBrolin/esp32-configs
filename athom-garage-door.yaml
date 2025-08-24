@@ -93,7 +93,7 @@ bluetooth_proxy:
   active: true
 
 dashboard_import:
-  package_import_url: github://athom-tech/esp32-configs/athom-garage-door.yaml
+  package_import_url: github://vBrolin/esp32-configs/athom-garage-door.yaml
 
 sensor:
   - platform: uptime
